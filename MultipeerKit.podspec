@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "MultipeerKit"
   spec.version      = "0.0.1"
-  spec.summary      = "MutlipeerConnectivity ❤️ Codable"
+  spec.summary      = "MultipeerConnectivity ❤️ Codable"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -89,7 +89,9 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Sources/**/*.swift"
+  spec.source_files  = "Sources/**/*"
+
+  spec.platform     = :ios, '13.0'
 
   # spec.public_header_files = "Classes/**/*.h"
 
