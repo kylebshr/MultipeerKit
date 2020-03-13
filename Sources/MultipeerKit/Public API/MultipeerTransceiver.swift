@@ -82,6 +82,10 @@ public final class MultipeerTransceiver {
         connection.stop()
     }
 
+    public func disconnect() {
+        connection.disconnect()
+    }
+
     /// Sends a message to all connected peers.
     /// - Parameter payload: The payload to be sent.
     public func broadcast<T: Encodable>(_ payload: T) {

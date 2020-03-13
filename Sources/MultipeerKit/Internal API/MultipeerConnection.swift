@@ -57,6 +57,10 @@ final class MultipeerConnection: NSObject, MultipeerProtocol {
         }
     }
 
+    func disconnect() {
+        session.disconnect()
+    }
+
     private lazy var session: MCSession = {
         let s = MCSession(
             peer: me,

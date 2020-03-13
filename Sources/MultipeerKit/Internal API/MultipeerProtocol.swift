@@ -13,6 +13,8 @@ protocol MultipeerProtocol: AnyObject {
     func resume()
     func stop()
 
+    func disconnect()
+
     func invite(_ peer: Peer, with context: Data?, timeout: TimeInterval, completion: InvitationCompletionHandler?)
     func broadcast(_ data: Data) throws
     func send(_ data: Data, to peers: [Peer]) throws
