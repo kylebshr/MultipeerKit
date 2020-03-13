@@ -18,6 +18,10 @@ final class MockMultipeerConnection: MultipeerProtocol {
         isRunning = false
     }
 
+    func disconnect() {
+        
+    }
+
     func broadcast(_ data: Data) throws {
         didReceiveData?(data, "MockPeer")
     }
